@@ -12,8 +12,10 @@ Click Use this template -> Creat an new repository
 
 ### Setup node 
 
+```bash
 node -v
 npm -v
+```
 
 ### Installation
 

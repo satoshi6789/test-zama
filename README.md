@@ -5,13 +5,15 @@ FHEVM protocol by Zama.
 
 ## Quick Start
 
-For detailed instructions see:
-[FHEVM Hardhat Quick Start Tutorial](https://docs.zama.ai/protocol/solidity-guides/getting-started/quick-start-tutorial)
+Go to : https://github.com/zama-ai/fhevm-hardhat-template
 
-### Prerequisites
+Click Use this template -> Creat an new repository
 
-- **Node.js**: Version 20 or higher
-- **npm or yarn/pnpm**: Package manager
+
+### Setup node 
+
+node -v
+npm -v
 
 ### Installation
 
@@ -107,4 +109,4 @@ This project is licensed under the BSD-3-Clause-Clear License. See the [LICENSE]
 
 ---
 
-**Built with ❤️ by the Zama team**
+**Built with ❤️ by Eternal**

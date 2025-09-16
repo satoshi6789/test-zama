@@ -27,7 +27,7 @@ npm -v
 
 2. **Set up environment variables**
 
- -Creat folder .env
+- Creat folder .env
 - Go to : " https://blastapi.io/chains/ethereum " copy RPC
 - Go to : " https://etherscan.io/apidashboard " Copy API Key
 - Copy Prive Key metamask or OKX wallet
@@ -213,13 +213,13 @@ function decrement(externalEuint32 inputEuint32, bytes calldata inputProof) exte
   FHE.allow(_count, msg.sender);
 }
 }
-
-10. Run : npx hardhat compile -> enter
-
-11. Edit folder " test/FHECounter.ts "
-
-Paste code :
-
+```
+8. **Run**
+```bash
+npx hardhat compile -> enter
+```
+9. **Edit folder " test/FHECounter.ts "**
+```bash
 import { FHECounter, FHECounter__factory } from "../types";
 import { FhevmType } from "@fhevm/hardhat-plugin";
 import { HardhatEthersSigner } from "@nomicfoundation/hardhat-ethers/signers";
@@ -319,21 +319,20 @@ describe("FHECounter", function () {
   });
 });
 ```
-8. **Run**
+10. **Run**
 ```bash
 npx hardhat test
 ``` 
-9. **Deploy to local network**
+11. **Deploy to local network**
     
-
    ```bash
    npx hardhat test --network hardhat
    ```
 ```bash
 npx hardhat node
 ```
-10. **Deploy to Sepolia Testnet**
- Open a new terminal window
+12. **Deploy to Sepolia Testnet**
+ - Open a new terminal window
 ```bash
 npx hardhat test --network localhost
 ```
@@ -346,16 +345,7 @@ npx hardhat --network localhost task:increment --value 1
 npx hardhat --network localhost task:decrypt-count
 ```
 
-11. **Deploy to Sepolia Testnet**
-
-   ```bash
-   # Deploy to Sepolia
-   npx hardhat deploy --network sepolia
-   # Verify contract on Etherscan
-   npx hardhat verify --network sepolia <CONTRACT_ADDRESS>
-   ```
-
-12. **Edit folder : " hardhat.config.ts "**
+13. **Edit folder : " hardhat.config.ts "**
 ```bash
 import "@fhevm/hardhat-plugin";
 import "@nomicfoundation/hardhat-chai-matchers";
@@ -433,8 +423,8 @@ const config: HardhatUserConfig = {
 export default config;
 ```
 
-13. **Run on Sepolia Ethereum Testnet**
-  Ensure that your wallet has ETH Sepolia
+14. **Run on Sepolia Ethereum Testnet**
+  - Ensure that your wallet has ETH Sepolia
 ```bash
 npx hardhat clean
 npx hardhat compile --network sepolia

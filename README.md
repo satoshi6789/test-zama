@@ -38,7 +38,7 @@ npm -v
   ETHERSCAN_API_KEY= API KEY 
    ```
 3. **Write a simple contract**
- Creat folder " Contracts/Counter.Sol "
+ - Creat folder " Contracts/Counter.Sol "
    ```bash
    // SPDX-License-Identifier: MIT
    pragma solidity ^0.8.24;
@@ -70,7 +70,7 @@ npm -v
  npx hardhat compile
  ```
 5. **Set up the testing environment**
-  Create a test script " test/Counter.ts "
+- Create a test script " test/Counter.ts "
  ```bash
 import { FHECounter, FHECounter__factory } from "../types";
 import { FhevmType } from "@fhevm/hardhat-plugin";

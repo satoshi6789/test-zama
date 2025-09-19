@@ -216,7 +216,7 @@ function decrement(externalEuint32 inputEuint32, bytes calldata inputProof) exte
 ```
 8. **Run**
 ```bash
-npx hardhat compile -> enter
+npx hardhat compile
 ```
 9. **Edit folder " test/FHECounter.ts "**
 ```bash
